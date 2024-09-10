@@ -15,7 +15,7 @@
 img{
     max-width: 100%;
 }
-ul .list-unstyled{
+ul.list-unstyled{
     display: flex;
     list-style: none;
     gap: 10px;
@@ -63,6 +63,12 @@ ul .list-unstyled{
     background-color: deeppink;
     
 }
+.debug .product{
+    background-color: black;
+    height: 250px;
+    width: 100px;
+
+}
 /* #endregion debug */
 
 
@@ -73,12 +79,6 @@ ul .list-unstyled{
         width: 25%;
         display: flex;
         align-items: center;
-        ul{
-            display: flex;
-            list-style: none;
-            gap: 10px;
-            color: var(--zala-txt);
-        }
     }
     .logo{
         box-sizing: border-box;
@@ -94,12 +94,23 @@ ul .list-unstyled{
     }
     .personal{
         width: 25%;
+        display: flex;
+        align-items: center;
         text-align: end;
-        /* line-height: 2.75rem; */
     }
     
 }
 
 
 /* #endregion header */
+
+/* #region main */
+
+#App_main{
+    .conteiner{
+        flex-wrap: wrap;
+    }
+}
+/* #endregion main */
+
 
