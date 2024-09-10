@@ -1,38 +1,50 @@
 /* #region comun */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
-:root{
-    --zala-header:#ff6900;
-    --zala-main:#ffffff;
-    --zala-footer:#1a1a1a;
-    --zala-discount:#ff0000;
-    --zala-sostenibility:#008000;
-    --zala-txt:#fff5ee;
+
+:root {
+    --zala-header: #ff6900;
+    --zala-main: #ffffff;
+    --zala-footer: #1a1a1a;
+    --zala-discount: #ff0000;
+    --zala-sostenibility: #008000;
+    --zala-txt: #fff5ee;
 }
-img{
+
+img {
     max-width: 100%;
 }
-ul.list-unstyled{
+
+ul.list-unstyled {
     display: flex;
     list-style: none;
     gap: 10px;
     color: var(--zala-txt);
 }
+
+li a {
+    text-decoration: none;
+    color: var(--zala-txt);
+}
+
 /* #endregion comun */
 
 /* #region utility */
-.d-flex{
+.d-flex {
     display: flex;
 }
-.conteiner{
+
+.conteiner {
     display: flex;
     width: 80%;
     margin: auto;
 }
-.justify-content-between{
+
+.justify-content-between {
     justify-content: space-between;
 }
 
@@ -41,126 +53,157 @@ ul.list-unstyled{
 
 /* #region debug */
 
-.debug *{
+.debug * {
     border: 1px dashed;
 }
 
 
-.debug header{
+.debug header {
     background-color: red;
 }
-.debug footer{
+
+.debug footer {
     background-color: deepskyblue;
 }
-.debug .conteiner{
+
+.debug .conteiner {
     background-color: blue;
 }
-.debug .menu{
+
+.debug .menu {
     background-color: yellow;
-    
+
 }
-.debug .logo{
+
+.debug .logo {
     background-color: green;
-    
+
 }
-.debug .personal{
+
+.debug .personal {
     background-color: deeppink;
-    
+
 }
-.debug .product{
+
+.debug .product {
     background-color: black;
     height: 250px;
     width: 200px;
 }
-.debug .product:hover{
+
+.debug .product:hover {
     background-color: lime;
     height: 250px;
     width: 200px;
 }
-.debug .discount{
+
+.debug .discount {
     background-color: red;
 }
-.debug .sostenibility{
+
+.debug .sostenibility {
     background-color: green;
 }
+
 /* #endregion debug */
 
 
 /* #region header */
-#App_Header{
+#App_Header {
     background-color: var(--zala-header);
-    .menu{
+
+    .menu {
         width: 25%;
         display: flex;
         align-items: center;
+        font-weight: bold;
     }
-    .logo{
+
+    .logo {
         box-sizing: border-box;
         display: flex;
         text-align: center;
         width: 20%;
+
         /* padding: .5rem; */
-        img{
+        img {
             padding: 1rem;
 
         }
-    
+
     }
-    .personal{
+
+    .personal {
         width: 25%;
         display: flex;
         align-items: center;
         justify-content: end;
-    }
-    
-}
 
+        a i {
+            color: var(--zala-txt);
+        }
+    }
+
+}
 
 /* #endregion header */
 
 /* #region main */
 
-#App_main{
+#App_main {
     margin: 2rem 0;
-    .conteiner{
+
+    .conteiner {
         position: relative;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        .card{
-            width: calc( (100% / 3) - 2rem);
-            .product{
+        /* justify-content: center; */
+        justify-content: space-between;
+
+        /* gap: 1rem; */
+        .card {
+            width: calc((100% / 3) - 2rem);
+            margin: 1rem 0;
+
+            .product {
                 position: relative;
 
             }
-    
-            .discountLayer{
+
+            .discountLayer {
                 position: absolute;
                 bottom: 2rem;
             }
-            .discount, .sostenibility{
+
+            .discount,
+            .sostenibility {
                 display: inline-block;
                 color: var(--zala-txt);
                 padding: 3px 8px;
                 font-size: .75rem;
             }
-            .discount{
+
+            .discount {
                 background-color: var(--zala-discount);
             }
-            .sostenibility{
+
+            .sostenibility {
                 background-color: var(--zala-sostenibility);
             }
-            .brend{
+
+            .brend {
                 font-size: .75rem;
             }
-            .name{
+
+            .name {
                 font-weight: bold;
             }
-            span:first-child{
+
+            span:first-child {
                 color: var(--zala-discount);
                 font-weight: bold;
             }
-            .like{
+
+            .like {
                 position: absolute;
                 display: flex;
                 right: 0;
@@ -172,55 +215,71 @@ ul.list-unstyled{
                 justify-content: center;
                 font-size: 1.5rem;
                 border-radius: 1000px 0 0 1000px;
-                padding: 0 20px;               
-            }
-            .like:hover{
-                color: var(--zala-discount);
+                padding: 0 20px;
             }
         }
     }
-    .after{
-        position: absolute;
-    }
-    .relaxed:hover{
-        content:url(../img/1b.webp)
-    }
-    .roses:hover{
-        content:url(../img/2b.webp)
-    }
-    .voglia:hover{
-        content:url(../img/3b.webp)
-    }
-    .tshirt:hover{
-        content:url(../img/4b.webp)
-    }
-    .stripe:hover{
-        content:url(../img/5b.webp)
-    }
-    .black:hover{
-        content:url(../img/6b.webp)
-    }
-    
 }
+
+/* #region hover */
+.after {
+    position: absolute;
+}
+
+.relaxed:hover {
+    content: url(../img/1b.webp)
+}
+
+.roses:hover {
+    content: url(../img/2b.webp)
+}
+
+.voglia:hover {
+    content: url(../img/3b.webp)
+}
+
+.tshirt:hover {
+    content: url(../img/4b.webp)
+}
+
+.stripe:hover {
+    content: url(../img/5b.webp)
+}
+
+.black:hover {
+    content: url(../img/6b.webp)
+}
+
+.like:hover {
+    color: var(--zala-discount);
+}
+
+/* #endregion hover */
+
 /* #endregion main */
 
 /* #region footer */
-#App_footer{
+#App_footer {
+    background-color: var(--zala-footer);
     padding: 1rem;
     color: var(--zala-txt);
-    .social{
-        display: block;
-        h5{
-            text-align: center;
+
+    .credit {
+        h3 {
+            margin: .5rem 0;
         }
-        
+
+
     }
 
+    .social {
+        display: block;
+
+        h5 {
+            text-align: center;
+            margin: .5rem 0;
+        }
+    }
 }
 
 /* #endregion footer */
-
-
-
-
-
