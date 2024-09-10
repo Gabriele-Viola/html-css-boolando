@@ -31,8 +31,9 @@ ul.list-unstyled{
     display: flex;
     width: 80%;
     margin: auto;
+}
+.justify-content-between{
     justify-content: space-between;
-
 }
 
 /* #endregion utility */
@@ -47,6 +48,9 @@ ul.list-unstyled{
 
 .debug header{
     background-color: red;
+}
+.debug footer{
+    background-color: deepskyblue;
 }
 .debug .conteiner{
     background-color: blue;
@@ -66,8 +70,18 @@ ul.list-unstyled{
 .debug .product{
     background-color: black;
     height: 250px;
-    width: 100px;
-
+    width: 200px;
+}
+.debug .product:hover{
+    background-color: lime;
+    height: 250px;
+    width: 200px;
+}
+.debug .discount{
+    background-color: red;
+}
+.debug .sostenibility{
+    background-color: green;
 }
 /* #endregion debug */
 
@@ -96,7 +110,7 @@ ul.list-unstyled{
         width: 25%;
         display: flex;
         align-items: center;
-        text-align: end;
+        justify-content: end;
     }
     
 }
@@ -107,10 +121,55 @@ ul.list-unstyled{
 /* #region main */
 
 #App_main{
+    margin: 2rem 0;
     .conteiner{
+        position: relative;
         flex-wrap: wrap;
+        .product{
+            position: relative;
+        }
+
+        .discountLayer{
+            position: absolute;
+            bottom: 1rem;
+        }
+        .discount, .sostenibility{
+            display: inline-block;
+            color: var(--zala-txt);
+        }
+        .like{
+            position: absolute;
+            right: 0;
+            top: .25rem;
+            background-color: white;
+            width: 10px;
+            aspect-ratio: 1;
+        }
+        .like:hover{
+            color: var(--zala-discount);
+        }
+
     }
 }
 /* #endregion main */
+
+/* #region footer */
+#App_footer{
+    padding: 1rem;
+    color: var(--zala-txt);
+    .social{
+        display: block;
+        h5{
+            text-align: center;
+        }
+        
+    }
+
+}
+
+/* #endregion footer */
+
+
+
 
 
