@@ -125,30 +125,44 @@ ul.list-unstyled{
     .conteiner{
         position: relative;
         flex-wrap: wrap;
-        .product{
-            position: relative;
-        }
+        justify-content: center;
+        gap: 1rem;
+        .card{
+            width: calc( (100% / 3) - 2rem);
+            .product{
+                position: relative;
 
-        .discountLayer{
-            position: absolute;
-            bottom: 1rem;
+            }
+    
+            .discountLayer{
+                position: absolute;
+                bottom: 1rem;
+            }
+            .discount, .sostenibility{
+                display: inline-block;
+                color: var(--zala-txt);
+            }
+            .like{
+                position: absolute;
+                right: 0;
+                top: .25rem;
+                background-color: white;
+                width: 10px;
+                aspect-ratio: 1;
+            }
+            .like:hover{
+                color: var(--zala-discount);
+            }
         }
-        .discount, .sostenibility{
-            display: inline-block;
-            color: var(--zala-txt);
-        }
-        .like{
-            position: absolute;
-            right: 0;
-            top: .25rem;
-            background-color: white;
-            width: 10px;
-            aspect-ratio: 1;
-        }
-        .like:hover{
-            color: var(--zala-discount);
-        }
-
+    }
+    .before{
+                    
+    }
+    .after{
+        position: absolute;
+    }
+    .after:hover{
+        display: none;
     }
 }
 /* #endregion main */
