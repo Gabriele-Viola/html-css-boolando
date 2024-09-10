@@ -1,9 +1,105 @@
+/* #region comun */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --zala-header:#ff6900;
+    --zala-main:#ffffff;
+    --zala-footer:#1a1a1a;
+    --zala-discount:#ff0000;
+    --zala-sostenibility:#008000;
+    --zala-txt:#fff5ee;
+}
+img{
+    max-width: 100%;
+}
+ul .list-unstyled{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    color: var(--zala-txt);
+}
+/* #endregion comun */
+
+/* #region utility */
+.d-flex{
+    display: flex;
+}
+.conteiner{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+/* #endregion utility */
+
+
+/* #region debug */
 
 .debug *{
     border: 1px dashed;
 }
+
+
+.debug header{
+    background-color: red;
+}
+.debug .conteiner{
+    background-color: blue;
+}
+.debug .menu{
+    background-color: yellow;
+    
+}
+.debug .logo{
+    background-color: green;
+    
+}
+.debug .personal{
+    background-color: deeppink;
+    
+}
+/* #endregion debug */
+
+
+/* #region header */
+#App_Header{
+    background-color: var(--zala-header);
+    .menu{
+        width: 25%;
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 10px;
+            color: var(--zala-txt);
+        }
+    }
+    .logo{
+        box-sizing: border-box;
+        display: flex;
+        text-align: center;
+        width: 20%;
+        /* padding: .5rem; */
+        img{
+            padding: 1rem;
+
+        }
+    
+    }
+    .personal{
+        width: 25%;
+        text-align: end;
+        /* line-height: 2.75rem; */
+    }
+    
+}
+
+
+/* #endregion header */
+
