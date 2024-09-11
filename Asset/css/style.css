@@ -225,31 +225,15 @@ li a {
 .after {
     position: absolute;
 }
-
-.relaxed:hover {
-    content: url(../img/1b.webp)
+.product .back{
+    display: none;
 }
-
-.roses:hover {
-    content: url(../img/2b.webp)
+.product:hover .back{
+    display: inline-block;
 }
-
-.voglia:hover {
-    content: url(../img/3b.webp)
+.product:hover .front{
+    display: none;
 }
-
-.tshirt:hover {
-    content: url(../img/4b.webp)
-}
-
-.stripe:hover {
-    content: url(../img/5b.webp)
-}
-
-.black:hover {
-    content: url(../img/6b.webp)
-}
-
 .like:hover {
     color: var(--zala-discount);
 }
