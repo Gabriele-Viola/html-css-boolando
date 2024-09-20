@@ -6,37 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./Asset/css/style.css">
     <title>Boolando</title>
 </head>
 
 <body class="debu">
-    <header id="App_Header">                 
+    <header id="App_Header">
         <div class="conteiner justify-content-between">
             <div class="menu">
                 <ul class="list-unstyled">
                     <li>
                         <a href="#">
-                            Donna
-                    </a>
-                    </li>              
-                    <li>
-                        <a href="#">
-                            Uomo
-                    </a>
+                            <span class="d-xs-none">Donna</span>
+                            <span class="d-none d-inline-b">
+                                <i class="fa-solid fa-person-dress"></i>
+                            </span>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
-                            Bambino
-                    </a>
+                            <span class="d-xs-none">Uomo</span>
+                            <span class="d-none d-inline-b">
+                                <i class="fa-solid fa-person"></i>
+                            </span>                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="d-xs-none">Bambino</span>
+                            <span class="d-none d-inline-b">
+                                <i class="fa-solid fa-children"></i>
+                            </span>                            
+                        </a>
                     </li>
                 </ul>
             </div>
             <!-- /.menu -->
             <div class="logo">
-                <img src="./Asset/img/boolean-logo.png" alt="">
+                <a href="#">
+                    <img src="./Asset/img/boolean-logo.png" alt="">
+                </a>
             </div>
             <!-- /.logo -->
             <div class="personal">
@@ -44,17 +59,17 @@
                     <li>
                         <a href="#">
                             <i class="fa-regular fa-user"></i>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-regular fa-heart"></i>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-solid fa-bag-shopping"></i>
-                    </a>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -66,16 +81,19 @@
     <main id="App_main">
         <div class="conteiner">
             <div class="card">
-                <div class="product">
-                    <img class="front" src="./Asset/img/1.webp" alt="">
-                    <img class="back" src="./Asset/img/1b.webp" alt="">
+                <a class="product" href="#">
+                    <div class="link">
+                        <img class="front" src="./Asset/img/1.webp" alt="">
+                        <img class="back" src="./Asset/img/1b.webp" alt="">
+                    </div>
                     <div class="like">&hearts;</div>
                     <div class="discountLayer">
                         <div class="discount">-50%</div>
                         <div class="sostenibility">Sostenibilità</div>
                     </div>
-                </div>
-                <div class="descriptio">
+                    <!-- discountLayer -->
+                </a>
+                <a class="description" href="#">
                     <div class="brend">Levi's</div>
                     <div class="name">RELAXED FIT TEE UNISEX</div>
                     <div class="price">
@@ -86,95 +104,26 @@
                             29,99 &euro;
                         </del>
                     </div>
-                </div>
+                </a>
             </div>
-            <!-- CARD -->
-            <div class="card">
-                <div class="product">
-                    <img class="front" src="./Asset/img/2.webp" alt="">
-                    <img class="back" src="./Asset/img/2b.webp" alt="">
-                    <div class="like">&hearts;</div>
-                    <div class="discountLayer">
-                        <div class="discount">-50%</div>
-                        <div class="sostenibility">Sostenibilità</div>
-                    </div>
-                </div>
-                <div class="descriptio">
-                    <div class="brend">Levi's</div>
-                    <div class="name">RELAXED FIT TEE UNISEX</div>
-                    <div class="price">
-                        <span>
-                            14,99 &euro;
-                        </span>
-                        <del>
-                            29,99 &euro;
-                        </del>
-                    </div>
-                </div>
-            </div>
-            <!-- CARD -->
-            <div class="card">
-                <div class="product">
-                    <img class="front" src="./Asset/img/3.webp" alt="">
-                    <img class="back" src="./Asset/img/3b.webp" alt="">
+            <a href=""></a>
 
-                    <div class="like">&hearts;</div>
-                    <div class="discountLayer">
-                        <div class="discount">-50%</div>
-                        <div class="sostenibility">Sostenibilità</div>
-                    </div>
-                </div>
-                <div class="descriptio">
-                    <div class="brend">Levi's</div>
-                    <div class="name">RELAXED FIT TEE UNISEX</div>
-                    <div class="price">
-                        <span>
-                            14,99 &euro;
-                        </span>
-                        <del>
-                            29,99 &euro;
-                        </del>
-                    </div>
-                </div>
-            </div>
-            <!-- CARD -->
-            <div class="card">
-                <div class="product">
-                    <img class="front" src="./Asset/img/4.webp" alt="">
-                    <img class="back" src="./Asset/img/4b.webp" alt="">
 
-                    <div class="like">&hearts;</div>
-                    <div class="discountLayer">
-                        <div class="discount">-50%</div>
-                        <div class="sostenibility">Sostenibilità</div>
-                    </div>
-                </div>
-                <div class="descriptio">
-                    <div class="brend">Levi's</div>
-                    <div class="name">RELAXED FIT TEE UNISEX</div>
-                    <div class="price">
-                        <span>
-                            14,99 &euro;
-                        </span>
-                        <del>
-                            29,99 &euro;
-                        </del>
-                    </div>
-                </div>
-            </div>
             <!-- CARD -->
             <div class="card">
-                <div class="product">
-                    <img class="front" src="./Asset/img/5.webp" alt="">
-                    <img class="back" src="./Asset/img/5b.webp" alt="">
+                <a class="product" href="#">
+                    <div class="link">
+                        <img class="front" src="./Asset/img/2.webp" alt="">
+                        <img class="back" src="./Asset/img/2b.webp" alt="">
 
+                    </div>
                     <div class="like">&hearts;</div>
                     <div class="discountLayer">
                         <div class="discount">-50%</div>
                         <div class="sostenibility">Sostenibilità</div>
                     </div>
-                </div>
-                <div class="descriptio">
+                </a>
+                <div class="description">
                     <div class="brend">Levi's</div>
                     <div class="name">RELAXED FIT TEE UNISEX</div>
                     <div class="price">
@@ -189,16 +138,100 @@
             </div>
             <!-- CARD -->
             <div class="card">
-                <div class="product">
-                    <img class="front" src="./Asset/img/6.webp" alt="">
-                    <img class="back" src="./Asset/img/6b.webp" alt="">
+                <a class="product" href="#">
+                    <div class="link">
+                        <img class="front" src="./Asset/img/3.webp" alt="">
+                        <img class="back" src="./Asset/img/3b.webp" alt="">
+
+                    </div>
                     <div class="like">&hearts;</div>
                     <div class="discountLayer">
                         <div class="discount">-50%</div>
                         <div class="sostenibility">Sostenibilità</div>
                     </div>
+                </a>
+                <div class="description">
+                    <div class="brend">Levi's</div>
+                    <div class="name">RELAXED FIT TEE UNISEX</div>
+                    <div class="price">
+                        <span>
+                            14,99 &euro;
+                        </span>
+                        <del>
+                            29,99 &euro;
+                        </del>
+                    </div>
                 </div>
-                <div class="descriptio">
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <a class="product" href="#">
+                    <div class="link">
+                        <img class="front" src="./Asset/img/4.webp" alt="">
+                        <img class="back" src="./Asset/img/4b.webp" alt="">
+
+                    </div>
+                    <div class="like">&hearts;</div>
+                    <div class="discountLayer">
+                        <div class="discount">-50%</div>
+                        <div class="sostenibility">Sostenibilità</div>
+                    </div>
+                </a>
+                <div class="description">
+                    <div class="brend">Levi's</div>
+                    <div class="name">RELAXED FIT TEE UNISEX</div>
+                    <div class="price">
+                        <span>
+                            14,99 &euro;
+                        </span>
+                        <del>
+                            29,99 &euro;
+                        </del>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <a class="product" href="#">
+                    <div class="link">
+                        <img class="front" src="./Asset/img/5.webp" alt="">
+                        <img class="back" src="./Asset/img/5b.webp" alt="">
+
+                    </div>
+                    <div class="like">&hearts;</div>
+                    <div class="discountLayer">
+                        <div class="discount">-50%</div>
+                        <div class="sostenibility">Sostenibilità</div>
+                    </div>
+                </a>
+                <div class="description">
+                    <div class="brend">Levi's</div>
+                    <div class="name">RELAXED FIT TEE UNISEX</div>
+                    <div class="price">
+                        <span>
+                            14,99 &euro;
+                        </span>
+                        <del>
+                            29,99 &euro;
+                        </del>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD -->
+            <div class="card">
+                <a class="product" href="#">
+                    <div class="link">
+                        <img class="front" src="./Asset/img/6.webp" alt="">
+                        <img class="back" src="./Asset/img/6b.webp" alt="">
+
+                    </div>
+                    <div class="like">&hearts;</div>
+                    <div class="discountLayer">
+                        <div class="discount">-50%</div>
+                        <div class="sostenibility">Sostenibilità</div>
+                    </div>
+                </a>
+                <div class="description">
                     <div class="brend">Levi's</div>
                     <div class="name">RELAXED FIT TEE UNISEX</div>
                     <div class="price">
@@ -221,12 +254,6 @@
 
 
         </div>
-
-
-
-
-
-
     </main>
     <!-- /#App_main -->
     <footer id="App_footer">
@@ -237,17 +264,17 @@
                     <li>
                         <a href="#">
                             Informazioni legali
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             Informazioni sulla privacy
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             Diritto di recesso
-                    </a>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -258,27 +285,27 @@
                     <li>
                         <a href="#">
                             <i class="fa-brands fa-square-twitter"></i>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-brands fa-square-facebook"></i>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-brands fa-square-instagram"></i>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-brands fa-square-pinterest"></i>
-                    </a>
+                        </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="fa-brands fa-square-youtube"></i>
-                    </a>
+                        </a>
                     </li>
                 </ul>
 
@@ -287,7 +314,6 @@
 
     </footer>
     <!-- /#footer -->
-
 </body>
 
 </html>
