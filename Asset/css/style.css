@@ -421,4 +421,14 @@ li a {
         }
     }
 }
-
+@media screen and (min-width: 1280px){
+    #App_main {
+        .conteiner {
+            width: 80%;
+            .card {
+                width: calc((100% / 6) - 1rem);
+                margin: .5rem;
+            }
+        }
+    }
+}
